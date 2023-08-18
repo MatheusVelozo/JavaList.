@@ -7,7 +7,6 @@ public class CarrinhoDeCompras {
     public CarrinhoDeCompras () {
         this.CarrinhoDeCompras = new ArrayList <>();
     }
-    
     public void adicionarItens(String nome, double preco, int quantidade) {
         Itens itens = new Itens(nome, preco, quantidade);
         this.CarrinhoDeCompras.add(itens);
