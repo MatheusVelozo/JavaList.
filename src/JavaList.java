@@ -10,11 +10,16 @@ public class JavaList {
        
        CarrinhoDeCompras.exibirItens();
        
-       CarrinhoDeCompras.removerItens("Lápis");
+       CarrinhoDeCompras.removerItens("Caderno");
        CarrinhoDeCompras.exibirItens();
        
         System.out.println("O Valor total da compra é = " + CarrinhoDeCompras.calcularValorTotal(0, 0));
        
+
+       ListaTarefa listaTarefa = new ListaTarefa();
+       System.out.println("Elementos na Lista: " + listaTarefa.obterNumeroTotalTarefas());
+       listaTarefa.adicionarTarefa("Tarefa 01");
+       System.out.println("Elementos na Lista: " + listaTarefa.obterNumeroTotalTarefas());
     }
     
 }
