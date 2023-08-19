@@ -8,24 +8,40 @@ public class CatalogoLivros {
         this.CatalogoLivros = new ArrayList<>();
     }
     public void adicionarLivro (String titulo, String autor, int anoPublicacao) {
-        Livro livro = new Livro(titulo, autor, anoPublicacao);
-        this.CatalogoLivros.add(livro);
+        CatalogoLivros.add(new Livro(titulo, autor, anoPublicacao));
     }
-    public void pesquisarPorAutor(String autor) {
-        List<Livro> PesquisaAutor = new ArrayList<>();
+    public List<Livro> pesquisarPorAutor(String autor) {
+        List<Livro> LivrosPorAutor = new ArrayList<>();
         if (!CatalogoLivros.isEmpty()) {
             for (Livro l : CatalogoLivros) {
                 if (l.getAutor().equalsIgnoreCase(autor)) {
-                    PesquisaAutor.add(l);
+                    LivrosPorAutor.add(l);
                 }
             }
         }
+        return LivrosPorAutor;
     }
-    public void exibirLivros () {
+    public List<Livro> pesquisaPorIntervaloAnos (int anoInicial, int anoFinal) {
+        List<Livro> livrosPorIntervalosDeAnos = new ArrayList<>();
         if (!CatalogoLivros.isEmpty()) {
-            System.out.println(this.CatalogoLivros);
-        } else {
-            System.out.println("Nenhum livro!");
+            for (Livro l : CatalogoLivros) {
+                if (l.getAnoPublicacao() >= anoInicial && l.getAnoPublicacao() <= anoFinal);
+                livrosPorIntervalosDeAnos.add(l);
+            }
         }
+        return livrosPorIntervalosDeAnos;
     }
+    public Livro pesquisarPorTitulo (String titulo) {
+        Livro livroPorTitulo = null;
+        if (!CatalogoLivros.isEmpty()) {
+            for (Livro l : CatalogoLivros) {
+                if (l.getTitulo().equalsIgnoreCase(titulo)) {
+                    livroPorTitulo = l;
+                    break;
+                }
+            }
+        }
+        return livroPorTitulo;
+    }
+    
 }
