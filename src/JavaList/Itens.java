@@ -1,3 +1,4 @@
+package JavaList;
 public class Itens {
     private String nome;
     private double preco;

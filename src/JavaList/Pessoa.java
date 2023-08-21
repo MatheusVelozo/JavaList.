@@ -1,3 +1,4 @@
+package JavaList;
 import java.util.Comparator;
 
 public class Pessoa implements Comparable<Pessoa>{

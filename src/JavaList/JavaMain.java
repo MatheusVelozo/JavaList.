@@ -1,7 +1,9 @@
-public class JavaList {
+package JavaList;
+public class JavaMain {
 
     public static void main(String[] args) {
-      /*TESTES CARRINHO DE COMPRAS.
+      /*--------FUNÇÕES LIST-------------
+      TESTES CARRINHO DE COMPRAS.
       CarrinhoDeCompras CarrinhoDeCompras = new CarrinhoDeCompras (); 
       CarrinhoDeCompras.adicionarItens("Lápis", 2d, 3);
       CarrinhoDeCompras.adicionarItens("Lápis", 2d, 3);
@@ -29,7 +31,7 @@ public class JavaList {
       System.out.println(catalogoLivros.pesquisaPorIntervaloAnos(2020, 2023));
       System.out.println(catalogoLivros.pesquisarPorTitulo("Livro 1"));
       ------------------------------------------------------------------------------------------------
-      TESTES ORDENAÇÃO DE PESSOAS.*/
+      TESTES ORDENAÇÃO DE PESSOAS.
       OrdenacaoPessoa ordenacaoPessoa = new OrdenacaoPessoa();
       ordenacaoPessoa.adicionarPessoa("nome 1", 20, 1.98);
       ordenacaoPessoa.adicionarPessoa("nome 2", 30, 1.80);
@@ -38,6 +40,6 @@ public class JavaList {
       System.out.println(ordenacaoPessoa.pessoaList);
       System.out.println(ordenacaoPessoa.ordenarPorIdade());
       System.out.println(ordenacaoPessoa.ordenarPorAltura());
-    }
-    
+    }*/
+  }   
 }
